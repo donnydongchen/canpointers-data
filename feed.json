@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-07-08",
+  "programs": [
+    {"id": "aeroplan", "name": "Aeroplan", "centsPerPoint": 2.0, "notes": "Milesopedia Jan 2026 average; 2.5–4¢ possible on business-class redemptions"},
+    {"id": "amex-mr", "name": "Amex Membership Rewards", "centsPerPoint": 1.7, "notes": "Higher when transferred to airline partners"},
+    {"id": "avion", "name": "RBC Avion", "centsPerPoint": 1.6, "notes": null},
+    {"id": "aventura", "name": "CIBC Aventura", "centsPerPoint": 1.2, "notes": null},
+    {"id": "scene-plus", "name": "Scene+", "centsPerPoint": 1.0, "notes": null},
+    {"id": "bonvoy", "name": "Marriott Bonvoy", "centsPerPoint": 0.9, "notes": null},
+    {"id": "mbna-rewards", "name": "MBNA Rewards", "centsPerPoint": 0.8, "notes": "Travel redemptions; less for cash"},
+    {"id": "bmo-rewards", "name": "BMO Rewards", "centsPerPoint": 0.67, "notes": null},
+    {"id": "td-rewards", "name": "TD Rewards", "centsPerPoint": 0.5, "notes": "Expedia For TD redemptions"},
+    {"id": "pc-optimum", "name": "PC Optimum", "centsPerPoint": 0.1, "notes": "10,000 points = $10 at Loblaws banners"}
+  ],
+  "cards": [
+    {
+      "id": "amex-cobalt", "name": "Amex Cobalt", "issuer": "American Express", "network": "Amex",
+      "programID": "amex-mr", "annualFeeCAD": 156, "baseRate": 1,
+      "earnRates": [
+        {"category": "groceries", "rate": 5, "capAnnualSpendCAD": 30000, "notes": "Eats & drinks incl. groceries and food delivery; $2,500/mo cap"},
+        {"category": "dining", "rate": 5, "capAnnualSpendCAD": 30000, "notes": "Eats & drinks; $2,500/mo cap"},
+        {"category": "streaming", "rate": 3, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "gas", "rate": 2, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "transit", "rate": 2, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "travel", "rate": 2, "capAnnualSpendCAD": null, "notes": null}
+      ],
+      "sourceURL": "https://www.americanexpress.com/ca/en/credit-cards/cobalt-card/"
+    },
+    {
+      "id": "amex-gold", "name": "Amex Gold Rewards", "issuer": "American Express", "network": "Amex",
+      "programID": "amex-mr", "annualFeeCAD": 250, "baseRate": 1,
+      "earnRates": [
+        {"category": "travel", "rate": 2, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "gas", "rate": 2, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "groceries", "rate": 2, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "drugstore", "rate": 2, "capAnnualSpendCAD": null, "notes": null}
+      ],
+      "sourceURL": "https://www.americanexpress.com/ca/en/credit-cards/gold-rewards-card/"
+    },
+    {
+      "id": "amex-platinum", "name": "The Platinum Card", "issuer": "American Express", "network": "Amex",
+      "programID": "amex-mr", "annualFeeCAD": 799, "baseRate": 1,
+      "earnRates": [
+        {"category": "dining", "rate": 2, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "travel", "rate": 2, "capAnnualSpendCAD": null, "notes": null}
+      ],
+      "sourceURL": "https://www.americanexpress.com/ca/en/credit-cards/platinum-card/"
+    },
+    {
+      "id": "amex-simplycash-preferred", "name": "SimplyCash Preferred", "issuer": "American Express", "network": "Amex",
+      "programID": null, "annualFeeCAD": 120, "baseRate": 2,
+      "earnRates": [
+        {"category": "groceries", "rate": 4, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "gas", "rate": 4, "capAnnualSpendCAD": null, "notes": null}
+      ],
+      "sourceURL": "https://www.americanexpress.com/ca/en/credit-cards/simplycash-preferred-card/"
+    },
+    {
+      "id": "amex-aeroplan", "name": "Amex Aeroplan Card", "issuer": "American Express", "network": "Amex",
+      "programID": "aeroplan", "annualFeeCAD": 120, "baseRate": 1,
+      "earnRates": [
+        {"category": "travel", "rate": 2, "capAnnualSpendCAD": null, "notes": "Air Canada and Air Canada Vacations purchases"},
+        {"category": "dining", "rate": 1.5, "capAnnualSpendCAD": null, "notes": null}
+      ],
+      "sourceURL": "https://www.americanexpress.com/ca/en/credit-cards/aeroplan-card/"
+    },
+    {
+      "id": "amex-aeroplan-reserve", "name": "Amex Aeroplan Reserve", "issuer": "American Express", "network": "Amex",
+      "programID": "aeroplan", "annualFeeCAD": 599, "baseRate": 1.25,
+      "earnRates": [
+        {"category": "travel", "rate": 3, "capAnnualSpendCAD": null, "notes": "Air Canada and Air Canada Vacations purchases"},
+        {"category": "dining", "rate": 2, "capAnnualSpendCAD": null, "notes": "Dining and food delivery in Canada"}
+      ],
+      "sourceURL": "https://www.americanexpress.com/ca/en/credit-cards/aeroplan-reserve-card/"
+    },
+    {
+      "id": "td-aeroplan-vi", "name": "TD Aeroplan Visa Infinite", "issuer": "TD", "network": "Visa",
+      "programID": "aeroplan", "annualFeeCAD": 139, "baseRate": 1,
+      "earnRates": [
+        {"category": "gas", "rate": 1.5, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "groceries", "rate": 1.5, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "travel", "rate": 1.5, "capAnnualSpendCAD": null, "notes": "Air Canada purchases direct"}
+      ],
+      "sourceURL": "https://www.td.com/ca/en/personal-banking/products/credit-cards/aeroplan/aeroplan-visa-infinite-card"
+    },
+    {
+      "id": "cibc-aeroplan-vi", "name": "CIBC Aeroplan Visa Infinite", "issuer": "CIBC", "network": "Visa",
+      "programID": "aeroplan", "annualFeeCAD": 139, "baseRate": 1,
+      "earnRates": [
+        {"category": "gas", "rate": 1.5, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "groceries", "rate": 1.5, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "travel", "rate": 1.5, "capAnnualSpendCAD": null, "notes": "Air Canada purchases direct"}
+      ],
+      "sourceURL": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aeroplan-visa-infinite-card.html"
+    },
+    {
+      "id": "cibc-aventura-vi", "name": "CIBC Aventura Visa Infinite", "issuer": "CIBC", "network": "Visa",
+      "programID": "aventura", "annualFeeCAD": 139, "baseRate": 1,
+      "earnRates": [
+        {"category": "travel", "rate": 2, "capAnnualSpendCAD": null, "notes": "Via CIBC Rewards travel centre"},
+        {"category": "gas", "rate": 1.5, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "groceries", "rate": 1.5, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "drugstore", "rate": 1.5, "capAnnualSpendCAD": null, "notes": null}
+      ],
+      "sourceURL": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-visa-infinite.html"
+    },
+    {
+      "id": "td-first-class-travel", "name": "TD First Class Travel Visa Infinite", "issuer": "TD", "network": "Visa",
+      "programID": "td-rewards", "annualFeeCAD": 139, "baseRate": 2,
+      "earnRates": [
+        {"category": "travel", "rate": 8, "capAnnualSpendCAD": null, "notes": "Booked via Expedia For TD"},
+        {"category": "groceries", "rate": 6, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "dining", "rate": 6, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "recurringBills", "rate": 6, "capAnnualSpendCAD": null, "notes": null}
+      ],
+      "sourceURL": "https://www.td.com/ca/en/personal-banking/products/credit-cards/travel-rewards/first-class-travel-visa-infinite-card"
+    },
+    {
+      "id": "cibc-dividend-vi", "name": "CIBC Dividend Visa Infinite", "issuer": "CIBC", "network": "Visa",
+      "programID": null, "annualFeeCAD": 120, "baseRate": 1,
+      "earnRates": [
+        {"category": "groceries", "rate": 4, "capAnnualSpendCAD": 20000, "notes": "$20k/yr combined cap on bonus categories"},
+        {"category": "gas", "rate": 4, "capAnnualSpendCAD": 20000, "notes": "Includes EV charging"},
+        {"category": "dining", "rate": 2, "capAnnualSpendCAD": 20000, "notes": null},
+        {"category": "transit", "rate": 2, "capAnnualSpendCAD": 20000, "notes": null},
+        {"category": "recurringBills", "rate": 2, "capAnnualSpendCAD": 20000, "notes": null}
+      ],
+      "sourceURL": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/dividend-visa-infinite.html"
+    },
+    {
+      "id": "scotia-momentum-vi", "name": "Scotiabank Momentum Visa Infinite", "issuer": "Scotiabank", "network": "Visa",
+      "programID": null, "annualFeeCAD": 120, "baseRate": 1,
+      "earnRates": [
+        {"category": "groceries", "rate": 4, "capAnnualSpendCAD": 25000, "notes": "$25k/yr combined cap on 4% categories"},
+        {"category": "recurringBills", "rate": 4, "capAnnualSpendCAD": 25000, "notes": "Recurring payments and subscriptions"},
+        {"category": "gas", "rate": 2, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "transit", "rate": 2, "capAnnualSpendCAD": null, "notes": null}
+      ],
+      "sourceURL": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-infinite-card.html"
+    },
+    {
+      "id": "scotia-gold-amex", "name": "Scotiabank Gold American Express", "issuer": "Scotiabank", "network": "Amex",
+      "programID": "scene-plus", "annualFeeCAD": 120, "baseRate": 1,
+      "earnRates": [
+        {"category": "groceries", "rate": 5, "capAnnualSpendCAD": null, "notes": "6x at Empire banners (Sobeys, Safeway, IGA, Foodland)"},
+        {"category": "dining", "rate": 5, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "entertainment", "rate": 5, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "gas", "rate": 3, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "transit", "rate": 3, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "streaming", "rate": 3, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "foreignCurrency", "rate": 1, "capAnnualSpendCAD": null, "notes": "No foreign transaction fees (saves ~2.5%)"}
+      ],
+      "sourceURL": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/gold-card.html"
+    },
+    {
+      "id": "scotia-passport-vi", "name": "Scotiabank Passport Visa Infinite", "issuer": "Scotiabank", "network": "Visa",
+      "programID": "scene-plus", "annualFeeCAD": 150, "baseRate": 1,
+      "earnRates": [
+        {"category": "groceries", "rate": 3, "capAnnualSpendCAD": null, "notes": "3x at Empire banners; 2x other groceries"},
+        {"category": "dining", "rate": 2, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "entertainment", "rate": 2, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "transit", "rate": 2, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "foreignCurrency", "rate": 1, "capAnnualSpendCAD": null, "notes": "No foreign transaction fees (saves ~2.5%)"}
+      ],
+      "sourceURL": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/passport-infinite-card.html"
+    },
+    {
+      "id": "rbc-avion-vi", "name": "RBC Avion Visa Infinite", "issuer": "RBC", "network": "Visa",
+      "programID": "avion", "annualFeeCAD": 120, "baseRate": 1,
+      "earnRates": [
+        {"category": "travel", "rate": 1.25, "capAnnualSpendCAD": null, "notes": null}
+      ],
+      "sourceURL": "https://www.rbcroyalbank.com/credit-cards/travel/rbc-avion-visa-infinite.html"
+    },
+    {
+      "id": "rbc-westjet-we", "name": "WestJet RBC World Elite Mastercard", "issuer": "RBC", "network": "Mastercard",
+      "programID": null, "annualFeeCAD": 119, "baseRate": 1.5,
+      "earnRates": [
+        {"category": "travel", "rate": 2, "capAnnualSpendCAD": null, "notes": "WestJet purchases; earned as WestJet dollars"}
+      ],
+      "sourceURL": "https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-world-elite-mastercard.html"
+    },
+    {
+      "id": "bmo-eclipse-vi", "name": "BMO eclipse Visa Infinite", "issuer": "BMO", "network": "Visa",
+      "programID": "bmo-rewards", "annualFeeCAD": 120, "baseRate": 1,
+      "earnRates": [
+        {"category": "groceries", "rate": 5, "capAnnualSpendCAD": 50000, "notes": "$50k/yr combined cap on 5x categories"},
+        {"category": "dining", "rate": 5, "capAnnualSpendCAD": 50000, "notes": null},
+        {"category": "gas", "rate": 5, "capAnnualSpendCAD": 50000, "notes": null},
+        {"category": "transit", "rate": 5, "capAnnualSpendCAD": 50000, "notes": null}
+      ],
+      "sourceURL": "https://www.bmo.com/main/personal/credit-cards/bmo-eclipse-visa-infinite/"
+    },
+    {
+      "id": "bmo-cashback-we", "name": "BMO CashBack World Elite Mastercard", "issuer": "BMO", "network": "Mastercard",
+      "programID": null, "annualFeeCAD": 120, "baseRate": 1,
+      "earnRates": [
+        {"category": "groceries", "rate": 5, "capAnnualSpendCAD": 6000, "notes": "$500/mo spend cap"},
+        {"category": "transit", "rate": 4, "capAnnualSpendCAD": 3600, "notes": "$300/mo spend cap"},
+        {"category": "gas", "rate": 3, "capAnnualSpendCAD": 3600, "notes": "$300/mo spend cap"},
+        {"category": "recurringBills", "rate": 2, "capAnnualSpendCAD": 6000, "notes": "$500/mo spend cap"}
+      ],
+      "sourceURL": "https://www.bmo.com/main/personal/credit-cards/bmo-cashback-world-elite-mastercard/"
+    },
+    {
+      "id": "neo-world-elite", "name": "Neo World Elite Mastercard", "issuer": "Neo Financial", "network": "Mastercard",
+      "programID": null, "annualFeeCAD": 120, "baseRate": 1,
+      "earnRates": [
+        {"category": "groceries", "rate": 5, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "recurringBills", "rate": 4, "capAnnualSpendCAD": null, "notes": null},
+        {"category": "gas", "rate": 3, "capAnnualSpendCAD": null, "notes": null}
+      ],
+      "sourceURL": "https://www.neofinancial.com/credit"
+    },
+    {
+      "id": "pc-financial-we", "name": "PC Financial World Elite Mastercard", "issuer": "PC Financial", "network": "Mastercard",
+      "programID": "pc-optimum", "annualFeeCAD": 0, "baseRate": 10,
+      "earnRates": [
+        {"category": "drugstore", "rate": 45, "capAnnualSpendCAD": null, "notes": "At Shoppers Drug Mart"},
+        {"category": "groceries", "rate": 30, "capAnnualSpendCAD": null, "notes": "At Loblaws banners (Loblaws, No Frills, Superstore, Zehrs)"},
+        {"category": "gas", "rate": 30, "capAnnualSpendCAD": null, "notes": "At Esso and Mobil"},
+        {"category": "travel", "rate": 30, "capAnnualSpendCAD": null, "notes": "Via PC Travel"}
+      ],
+      "sourceURL": "https://www.pcfinancial.ca/en/credit-cards/world-elite/"
+    },
+    {
+      "id": "rogers-red-we", "name": "Rogers Red World Elite Mastercard", "issuer": "Rogers Bank", "network": "Mastercard",
+      "programID": null, "annualFeeCAD": 0, "baseRate": 1.5,
+      "earnRates": [
+        {"category": "foreignCurrency", "rate": 3, "capAnnualSpendCAD": null, "notes": "USD purchases (FX fee still applies); 2% on everything with a Rogers/Fido/Shaw service"}
+      ],
+      "sourceURL": "https://www.rogersbank.com/en/rogers_red_mastercard"
+    },
+    {
+      "id": "tangerine-money-back", "name": "Tangerine Money-Back Mastercard", "issuer": "Tangerine", "network": "Mastercard",
+      "programID": null, "annualFeeCAD": 0, "baseRate": 0.5,
+      "earnRates": [
+        {"category": "groceries", "rate": 2, "capAnnualSpendCAD": null, "notes": "Choose 2 categories (3 with a Tangerine savings account)"},
+        {"category": "recurringBills", "rate": 2, "capAnnualSpendCAD": null, "notes": "Example second chosen category"}
+      ],
+      "sourceURL": "https://www.tangerine.ca/en/products/spending/creditcard/money-back-credit-card"
+    },
+    {
+      "id": "triangle-we", "name": "Triangle World Elite Mastercard", "issuer": "Canadian Tire Bank", "network": "Mastercard",
+      "programID": null, "annualFeeCAD": 0, "baseRate": 0,
+      "earnRates": [
+        {"category": "homeImprovement", "rate": 4, "capAnnualSpendCAD": null, "notes": "CT Money at Canadian Tire, Mark's, SportChek, Party City"},
+        {"category": "groceries", "rate": 3, "capAnnualSpendCAD": 12000, "notes": "Excludes Costco and Walmart"}
+      ],
+      "sourceURL": "https://www.canadiantire.ca/en/customer-service/triangle-mastercard.html"
+    },
+    {
+      "id": "mbna-rewards-we", "name": "MBNA Rewards World Elite Mastercard", "issuer": "MBNA", "network": "Mastercard",
+      "programID": "mbna-rewards", "annualFeeCAD": 120, "baseRate": 1,
+      "earnRates": [
+        {"category": "groceries", "rate": 5, "capAnnualSpendCAD": 50000, "notes": "$50k/yr cap per category"},
+        {"category": "dining", "rate": 5, "capAnnualSpendCAD": 50000, "notes": null},
+        {"category": "streaming", "rate": 5, "capAnnualSpendCAD": 50000, "notes": "Digital media and memberships"},
+        {"category": "recurringBills", "rate": 5, "capAnnualSpendCAD": 50000, "notes": "Household utilities"}
+      ],
+      "sourceURL": "https://www.mbna.ca/en/credit-cards/mbna-rewards-world-elite/"
+    },
+    {
+      "id": "amex-bonvoy", "name": "Marriott Bonvoy Amex", "issuer": "American Express", "network": "Amex",
+      "programID": "bonvoy", "annualFeeCAD": 120, "baseRate": 2,
+      "earnRates": [
+        {"category": "travel", "rate": 5, "capAnnualSpendCAD": null, "notes": "At Marriott Bonvoy properties"}
+      ],
+      "sourceURL": "https://www.americanexpress.com/ca/en/credit-cards/marriott-bonvoy-card/"
+    }
+  ],
+  "offers": [
+    {
+      "id": "offer-amex-platinum-2026-07", "cardID": "amex-platinum",
+      "headline": "Up to 170,000 Membership Rewards points",
+      "spendRequirement": "$10,000 in 3 months + $45,000 in 12 months",
+      "expiry": null, "estimatedFirstYearValueCAD": 2091,
+      "sourceURL": "https://princeoftravel.com/deals/best-credit-card-offers/"
+    },
+    {
+      "id": "offer-aeroplan-reserve-2026-07", "cardID": "amex-aeroplan-reserve",
+      "headline": "Up to 150,000 Aeroplan points",
+      "spendRequirement": "$7,500 in 3 months + $45,000 in 12 months + month 15–17 purchase",
+      "expiry": "2026-07-28", "estimatedFirstYearValueCAD": 2401,
+      "sourceURL": "https://princeoftravel.com/deals/best-credit-card-offers/"
+    },
+    {
+      "id": "offer-amex-gold-2026-07", "cardID": "amex-gold",
+      "headline": "Up to 90,000 Membership Rewards points",
+      "spendRequirement": "$4,000 in 3 months + $1,000/month for 12 months",
+      "expiry": null, "estimatedFirstYearValueCAD": 1280,
+      "sourceURL": "https://princeoftravel.com/deals/best-credit-card-offers/"
+    },
+    {
+      "id": "offer-rbc-avion-vi-2026-07", "cardID": "rbc-avion-vi",
+      "headline": "70,000 Avion points",
+      "spendRequirement": "$5,000 in 6 months",
+      "expiry": "2026-07-15", "estimatedFirstYearValueCAD": 1000,
+      "sourceURL": "https://princeoftravel.com/deals/best-credit-card-offers/"
+    },
+    {
+      "id": "offer-td-fct-2026-07", "cardID": "td-first-class-travel",
+      "headline": "Up to 146,000 TD Rewards points",
+      "spendRequirement": "$7,500 in 6 months",
+      "expiry": null, "estimatedFirstYearValueCAD": 591,
+      "sourceURL": "https://princeoftravel.com/deals/best-credit-card-offers/"
+    },
+    {
+      "id": "offer-td-aeroplan-vi-2026-07", "cardID": "td-aeroplan-vi",
+      "headline": "Up to 40,000 Aeroplan points",
+      "spendRequirement": "10k on first purchase + 15k at $3,000/90 days + 15k anniversary at $12,000/12 months",
+      "expiry": null, "estimatedFirstYearValueCAD": 661,
+      "sourceURL": "https://www.td.com/ca/en/personal-banking/products/credit-cards/aeroplan/aeroplan-visa-infinite-card"
+    },
+    {
+      "id": "offer-cibc-aeroplan-vi-2026-07", "cardID": "cibc-aeroplan-vi",
+      "headline": "Up to 50,000 Aeroplan points",
+      "spendRequirement": "10k first purchase + 20k at $6,000/6 statements + 20k anniversary at $12,000/12 months",
+      "expiry": null, "estimatedFirstYearValueCAD": 861,
+      "sourceURL": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aeroplan-visa-infinite-card.html"
+    },
+    {
+      "id": "offer-cibc-aventura-vi-2026-07", "cardID": "cibc-aventura-vi",
+      "headline": "Up to 45,000 Aventura points + first-year fee rebate",
+      "spendRequirement": "$3,000 in 4 months",
+      "expiry": null, "estimatedFirstYearValueCAD": 540,
+      "sourceURL": "https://princeoftravel.com/deals/best-credit-card-offers/"
+    },
+    {
+      "id": "offer-scotia-passport-2026-07", "cardID": "scotia-passport-vi",
+      "headline": "Up to 60,000 Scene+ points (recent elevated offer — verify with issuer)",
+      "spendRequirement": "Tiered spend requirements",
+      "expiry": null, "estimatedFirstYearValueCAD": 450,
+      "sourceURL": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/passport-infinite-card.html"
+    },
+    {
+      "id": "offer-amex-cobalt-2026-07", "cardID": "amex-cobalt",
+      "headline": "Up to 15,000 Membership Rewards points",
+      "spendRequirement": "$750/month for 12 months",
+      "expiry": null, "estimatedFirstYearValueCAD": 99,
+      "sourceURL": "https://www.americanexpress.com/ca/en/credit-cards/cobalt-card/"
+    }
+  ]
+}
