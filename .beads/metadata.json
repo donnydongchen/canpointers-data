@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "canpointers_data",
+  "project_id": "8a8a4fd0-23bb-4062-b363-24c853f9ffb9"
+}
